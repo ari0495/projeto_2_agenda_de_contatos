@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de médias</title>
+
+    <!-- Importando a fonte Roboto do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+    <header>
+        <img src="images/agenda T.png" alt="Agenda Telefônica">
+        <h1>Agenda de Contatos</h1>
+    </header>
+    <main>        
+        <section id="cadastrarDados">
+        <form action="" id="formulario">            
+            <input type="text" id="nomeAgenda" placeholder="Nome...">            
+            <input type="text" id="telefoneAgenda" min="0" maxlength="16" name="telefoneAgenda" placeholder="Telefone Celular">
+            <button type="submit" id="butaoCadastro">Cadastrar</button>
+        </form>
+        </section>        
+        <section id="listaAgendas">
+        <table cellspacing="0">            
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>                
+            </tr>
+            </thead>            
+            <tbody id="tbody"></tbody>            
+            <tfoot>
+            <tr>
+                <td></td>
+                <td></td>                
+            </tr>
+            </tfoot>
+        </table>
+        </section>
+    </main>
+    </div>    
+    <footer>    
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>
+        $("#telefoneAgenda").mask("(00) 00000-0000");
+    </script>   
+</body>
+</html>
